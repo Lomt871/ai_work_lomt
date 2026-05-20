@@ -202,10 +202,10 @@ def read_excel_to_html(file_path):
 def send_email_with_attachment(attachment_path):
     """发送带有附件和Excel内容的邮件"""
     # 邮件配置
-    sender_email = "liuxiufang@hltn.com"
-    sender_password = "Asd20220516"
-    receiver_email = "ya.liu@hltn.com,sunhaotian@hltn.com,bijinling@hltn.com,wuminhao@hltn.com,chenmingxin@hltn.com,fangyu.zeng@hltn.com,zjb-gzc@hltn.com,wanghaitong@hltn.com,wangxiaoyu02@hltn.com"
-    cc_email = "yuanwen.zhan@hltn.com,xiaoyan.liu@hltn.com,huangyaying@hltn.com,dongyi01@hltn.com,huxiaolin@hltn.com"
+    sender_email = "xxxx@hltn.com"
+    sender_password = "aaaaaa"
+    receiver_email = "xxxxxx@hltn.com"
+    cc_email = "xxxxx@hltn.com"
 
     # SMTP服务器配置 (腾讯企业邮箱)
     smtp_server = "smtp.exmail.qq.com"
@@ -409,12 +409,12 @@ def main():
 
             # 输入用户名
             username_input = page.wait_for_selector(".item-textinput", timeout=15000)
-            username_input.fill("60220")
+            username_input.fill("12345")
             print("用户名输入成功")
 
             # 输入密码
             password_input = page.wait_for_selector("//input[@type='password']", timeout=15000)
-            password_input.fill("Asd@2025")
+            password_input.fill("aaaaaa")
             print("密码输入成功")
 
             # 点击登录按钮
